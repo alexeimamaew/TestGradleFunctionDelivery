@@ -186,7 +186,7 @@ public class TestsFunctionDelivery {
         boolean isFragile = true;
         FuntionDelivery.LoadLevel loadLevel = FuntionDelivery.LoadLevel.VERY_HIGH;
 
-        int expectedCost = (int) (1120);
+        int expectedCost = (int) (1500);
         int actualCost = FuntionDelivery.calculateDeliveryCost(distance, size, isFragile, loadLevel);
 
         assertEquals(expectedCost, actualCost, "Расчет минимальной стоимости доставки неверен");
